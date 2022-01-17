@@ -7,23 +7,22 @@
 We will help Bobby build an employee database with SQL by applying our data modelling, engineering and analysis skills. The analysis will help future proof PH by generating a list of all employees eligible for retirement package.
 
 ### Purpose 
-* determine the number of retiring employees by title and identify employees who are eligible to participate in a mentorship program. Also, to create a summary report based on the analysis of employee database. The Analysis helps prepare Bobbyís manager for the ìsilver tsunamiî as many current employees reach retirement age.
+* determine the number of retiring employees by title and identify employees who are eligible to participate in a mentorship program. Also, to create a summary report based on the analysis of employee database. The Analysis helps prepare Bobby‚Äôs manager for the ‚Äúsilver tsunami‚Äù as many current employees reach retirement age.
 
 
 ## **Results**
 *  
-* Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed
-
-* Current Employees
+* Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed 
 
 ![Current Employees](./Data/Current_Employees.png)
 
  * The total number of current employees working in Pewlett Hackard is `240124` employees and the total number of employees retiring by title is `72458`. The total of employees retiring is in the unique_titles.csv file. 30 percent of current employees will be retiring soon based on the filter used. 
 
 * Employees retiring by title
+
 ![Employees retiring title](./Data/retiring_titles.png)
 
-* From the image above we can see the total number of retiring employees by title. 25916 are Senior Engineers and ì36%" of total retiring, 24926 are Senior Staff and "34%" of total retiring, 9285 are Engineers and "13%" of total retiring, 7636 are Staff and "11%" of total retiring, 3603 are Technique Leaders and "10%" of total retiring, 1090 are Assistant Engineers and "2%" of total retiring and 2 are Managers. 
+* From the image above we can see the total number of retiring employees by title. 25916 are Senior Engineers and ‚Äú36%" of total retiring, 24926 are Senior Staff and "34%" of total retiring, 9285 are Engineers and "13%" of total retiring, 7636 are Staff and "11%" of total retiring, 3603 are Technique Leaders and "10%" of total retiring, 1090 are Assistant Engineers and "2%" of total retiring and 2 are Managers. 
 	 
 * Employees retiring soon from each department
 ![Employees retiring Dept(./Data/retiring_titles.png) 
@@ -37,7 +36,7 @@ We will help Bobby build an employee database with SQL by applying our data mode
 
 ![Employees mentorship eligibilty](./Data/mentorship_eligibilty.png)
 
-	* The total number of employees who qualify for Mentorship/training program are 1549 and details are in mentorship_eligibilty.csv file.
+* The total number of employees who qualify for Mentorship/training program are 1549 and details are in mentorship_eligibilty.csv file.
 	
 	
 ## **Summary** 
