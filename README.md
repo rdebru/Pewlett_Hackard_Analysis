@@ -14,19 +14,21 @@
 
 * Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed 
 
-![CurrentEmployees](./Data/Current_Employees.png)
+* Current Employees 
+
+![CurrentEmployees](./Data/Current_Employees.PNG)
 
 * The total number of current employees working in Pewlett Hackard is `240124` employees and the total number of employees retiring by title is `72458`. The total of employees retiring is in the unique_titles.csv file. 30 percent of current employees will be retiring soon based on the filter used. 
 
 * Employees retiring by title 
 
-![Employees retiring title](./Data/retiring_titles.png)
+![Employees retiring title](./Data/retiring_titles.PNG)
 
 * From the image above we can see the total number of retiring employees by title. 25916 are Senior Engineers and “36%" of total retiring, 24926 are Senior Staff and "34%" of total retiring, 9285 are Engineers and "13%" of total retiring, 7636 are Staff and "11%" of total retiring, 3603 are Technique Leaders and "10%" of total retiring, 1090 are Assistant Engineers and "2%" of total retiring and 2 are Managers. 
 	 
 * Employees retiring soon from each department  
 
-![Employees retiring Dept](./Data/retiring_titles.png) 
+![Employees retiring Dept](./Data/retiring_titles.PNG) 
 
 * The departments with the highest number of potential employees to retire soon are 
 		* Development with total of 18368 and "25%", Production with total of 16172 and "22%", and Sales with total of 11336 and "16%". 
@@ -35,7 +37,7 @@
 
 * Employees Eligible for the Mentorship Program
 
-![Employees mentorship eligibilty](./Data/mentorship_eligibilty.png)
+![Employees mentorship eligibilty](./Data/mentorship_eligibilty.PNG)
 
 * The total number of employees who qualify for Mentorship/training program are 1549 and details are in mentorship_eligibilty.csv file.
 	
@@ -49,36 +51,36 @@
 
 * The two queries are
 * -- create a mentorship-eligibility table by title 
-`SELECT DISTINCT ON (e.emp_no) e.emp_no,
-	e.first_name, 
-	e.last_name, 
-	e.birth_date,
-	de.from_date,
-	de.to_date,
-	de.dept_no,
-	t.title
-INTO mentorship_title
-FROM employees AS e
-INNER JOIN dept_emp AS de
-ON (e.emp_no = de.emp_no)
-INNER JOIN titles AS t
-ON (e.emp_no = t.emp_no)
-WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-AND (de.to_date = '9999-01-01')
-ORDER BY e.emp_no;`
+	`SELECT DISTINCT ON (e.emp_no) e.emp_no,
+		e.first_name, 
+		e.last_name, 
+		e.birth_date,
+		de.from_date,
+		de.to_date,
+		de.dept_no,
+		t.title
+	INTO mentorship_title
+	FROM employees AS e
+	INNER JOIN dept_emp AS de
+	ON (e.emp_no = de.emp_no)
+	INNER JOIN titles AS t
+	ON (e.emp_no = t.emp_no)
+	WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+	AND (de.to_date = '9999-01-01')
+	ORDER BY e.emp_no;`
 
 * -- Mentorship count by title 
 
-`SELECT COUNT(med.emp_no) AS mentor_count,	
-	med.title	
-INTO mentorship_title_count
-FROM mentorship_title AS med
-GROUP BY med.title
-ORDER BY mentor_count DESC;`
+	`SELECT COUNT(med.emp_no) AS mentor_count,	
+		med.title	
+	INTO mentorship_title_count
+	FROM mentorship_title AS med
+	GROUP BY med.title
+	ORDER BY mentor_count DESC;`
 
 * Employees Eligible for the Mentorship Program by title 
 
-![Employees mentorship eligibiltytitle](./Data/mentorship_title_count.png)
+![Employees mentorship eligibiltytitle](./Data/mentorship_title_count.PNG)
 
 * from the above image the employees who qualify for mentorship program by title are 
 	* 476 are Senior Staff, 256 are Senior Engineers, 433 are Engineers  
