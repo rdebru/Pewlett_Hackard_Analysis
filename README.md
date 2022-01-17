@@ -14,20 +14,22 @@
 
 * Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed
 
-* Current Employees
+* Current Employees 
 
-![Current Employees]( ./Current_Employees.png)
- 
-	* The total number of current employees working in Pewlett Hackard is `240124` employees and the total number of employees retiring by title is `72458`. The total of employees retiring is in the unique_titles.csv file. 30 percent of current employees will be retiring soon based on the filter used. 
+![Current Employees](./Data/Current_Employees.png) 
+
+* The total number of current employees working in Pewlett Hackard is `240124` employees and the total number of employees retiring by title is `72458`. The total of employees retiring is in the unique_titles.csv file. 30 percent of current employees will be retiring soon based on the filter used. 
 
 * Employees retiring by title
-![Employees retiring title](C:/Users/Ruth/Class/Pewlett_Hackard_Analysis/Data/retiring_titles.png)
 
-	* From the image above we can see the total number of retiring employees by title. 25916 are Senior Engineers and “36%" of total retiring, 24926 are Senior Staff and "34%" of total retiring, 9285 are Engineers and "13%" of total retiring, 7636 are Staff and "11%" of total retiring, 3603 are Technique Leaders and "10%" of total retiring, 1090 are Assistant Engineers and "2%" of total retiring and 2 are Managers.
+![Employees retiring title](./Data/retiring_titles.png)
+
+* From the image above we can see the total number of retiring employees by title. 25916 are Senior Engineers and “36%" of total retiring, 24926 are Senior Staff and "34%" of total retiring, 9285 are Engineers and "13%" of total retiring, 7636 are Staff and "11%" of total retiring, 3603 are Technique Leaders and "10%" of total retiring, 1090 are Assistant Engineers and "2%" of total retiring and 2 are Managers.
 
 	 
-* Employees retiring soon from each department
-![Employees retiring Dept](C:/Users/Ruth/Class/Pewlett_Hackard_Analysis/Data/retiring_titles.png)
+* Employees retiring soon from each department 
+
+![Employees retiring Dept](./Data/retiring_titles.png)
 
 	* The departments with the highest number of potential employees to retire soon are 
 		* Development with total of 18368 and "25%", Production with total of 16172 and "22%", and Sales with total of 11336 and "16%". 
